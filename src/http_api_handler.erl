@@ -64,11 +64,11 @@ prepare_response(HttpStatus, Data, CowboyReq) ->
   ReqLast.
 
 process_titp(_Data, _Pid) ->
-  logger:info("TITP process...",  ?LOG_FILE),
+  logger:info("TITP process ...",  ?LOG_FILE),
   {error, not_implemented}.
 
 process_tic(_Data, _Pid) ->
-  logger:info("TIC process...",  ?LOG_FILE),
+  logger:info("TIC process ...",  ?LOG_FILE),
   {error, not_implemented}.
 
 terminate(_Reason, _Req, _State) ->
