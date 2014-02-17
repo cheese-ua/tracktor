@@ -24,8 +24,8 @@ start(_StartType, _StartArgs) ->
   ]),
 
   %% Name, NbAcceptors, TransOpts, ProtoOpts
-  Res = cowboy:start_http(http_api_handler, 100,
-    [{port, 8008}],
+  Res = cowboy:start_http(my_http_listener, 100,
+    [{port, 8080}],
     [{env, [{dispatch, Dispatch}]}]
   ),
   io:format("cowboy:start_http: ~w. Res: ~w~n", [?MODULE, Res]),
