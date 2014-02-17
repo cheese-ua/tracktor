@@ -1,4 +1,4 @@
-{application, tracktorapp,
+{application, tracktor_app,
  [
   {description, ""},
   {vsn, "1"},
@@ -7,6 +7,6 @@
                   kernel,
                   stdlib
                  ]},
-  {mod, { tracktorapp_app, []}},
+  {mod, { tracktor_app, []}},
   {env, []}
  ]}.
